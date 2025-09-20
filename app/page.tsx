@@ -32,24 +32,31 @@ const Page = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-[1500px]">
           {skins.map((skin, i) => (
-            <div
+            <a
+              href="https://gravitas.vit.ac.in/events/3df08aa2-22c9-42ff-8640-de501218780f"
+              target="_blank"
               key={i}
-              className="relative group cursor-pointer rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 shadow-md hover:shadow-xl w-full"
+              rel="noopener noreferrer"
             >
-              <div className="w-full aspect-[3/4]">
-                <img
-                  src={skin.src}
-                  alt={skin.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <div
+                key={i}
+                className="relative group cursor-pointer rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 shadow-md hover:shadow-xl w-full"
+              >
+                <div className="w-full aspect-[3/4]">
+                  <img
+                    src={skin.src}
+                    alt={skin.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
 
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 flex items-center justify-center transition duration-300">
-                <span className="text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition duration-300">
-                  {skin.name}
-                </span>
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 flex items-center justify-center transition duration-300">
+                  <span className="text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition duration-300">
+                    {skin.name}
+                  </span>
+                </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
