@@ -30,7 +30,7 @@ const Page = () => {
           click here to get free fortnite skins (not clickbait)
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-[1500px]">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-[1500px]">
           {skins.map((skin, i) => (
             <a
               href="https://gravitas.vit.ac.in/events/3df08aa2-22c9-42ff-8640-de501218780f"
