@@ -49,7 +49,7 @@ const Page = () => {
                 </div>
 
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 flex items-center justify-center transition duration-300">
-                  <span className="text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition duration-300">
+                  <span className="text-white custom-font text-3xl font-bold opacity-0 group-hover:opacity-100 transition duration-300">
                     {skin.name}
                   </span>
                 </div>
