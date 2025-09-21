@@ -1,9 +1,7 @@
-"use client";
-import React, { useState } from "react";
+"use server";
+import React from "react";
 
 const Page = () => {
-  const [count, setCount] = useState(0);
-
   const skins = [
     { src: "/fortnite/bCZk2B.png", name: "Raven" },
     { src: "/fortnite/bg.jpg", name: "Skull Trooper" },
